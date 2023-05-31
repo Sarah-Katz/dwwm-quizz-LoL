@@ -1,0 +1,33 @@
+:root {
+  --background: #262626;
+  --btnBackground: #121b1b;
+  --btnStroke: #533c16;
+  --textGold: linear-gradient(180deg, #895b2a 0%, #d49e46 52.6%, #895b2a 100%);
+  --textBlue: #11869e;
+}
+
+.background {
+  background-color: black;
+  position: fixed;
+}
+
+.background > img {
+  opacity: 0.2;
+}
+
+.navbar {
+  background-color: var(--background) !important;
+}
+
+.navbar-item {
+  background-color: var(--btnBackground) !important;
+  border: 2px solid var(--btnStroke) !important;
+  border-radius: 10px !important;
+}
+
+.navbar-item > span {
+  background: var(--textGold) !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 20px;
+}
