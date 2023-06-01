@@ -12,9 +12,7 @@
 
 <body>
     <!-- Background image -->
-    <div class="background">
-        <img src="/img/background1080.jpg" alt="background image">
-    </div>
+    <div class="background"></div>
     <!-- /Background image -->
     <!-- Navbar -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -33,17 +31,68 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <button id="linkListes" class="navbar-item button ml-6 m-2">
-                    <span>Listes</span>
+                    <span class="txt-gold">Listes</span>
                 </button>
                 <button id="linkQuizz" class="navbar-item button ml-6 m-2">
-                    <span>Quizz</span>
+                    <span class="txt-gold">Quizz</span>
                 </button>
             </div>
         </div>
     </nav>
     <!-- /Navbar -->
+    <!-- Boutons de choix de catégories -->
+    <div class="column is-8 is-offset-2 is-flex is-justify-content-space-around">
+        <button class="btn-cat button p-5">
+            <span class="txt-gold">Champions</span>
+        </button>
+        <button class="btn-cat button p-5">
+            <span class="txt-gold">Spells</span>
+        </button>
+        <button class="btn-cat button p-5">
+            <span class="txt-gold">Objects</span>
+        </button>
+    </div>
+    <!-- /Boutons de choix de catégories -->
+    <!-- Contenu champions -->
+    <!-- Searchbar -->
+    <div class="column is-full is-flex is-justify-content-center m-5">
+        <div class="field has-addons">
+            <div class="control">
+                <input id="champSearchInput" class="input btn-input" type="text" placeholder="Search by name">
+            </div>
+            <div class="control">
+                <a id="champSearchInputBtn" class="btn-input button">
+                    <span class="txt-gold">Search</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /Searchbar -->
+    <!-- Liste persos -->
+    <div id="championsList" class="columns is-multiline is-10 is-offset-1"></div>
+    <!-- /Liste persos -->
+    </div>
+    <!-- Modal champions -->
+    <div id="modalChampContainer" style="display: none;">
+        <div id="modalBackground"></div>
+        <div id="modalChamp" class="columns is-centered p-5">
+            <div id="modalChampImg" class="column is-4"></div>
+            <div id="modalChampSpells" class="column is-4"></div>
+            <div id="modalChampStats" class="column is-4">
+                <p class="subtitle mt-6 txt-gold">Statistics</p>
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal champions -->
+    <!-- /Contenu champions -->
 
-    <script defer src="/js/navbar.js"></script>r
+    <script defer src="/node_modules/chart.js/dist/chart.umd.js"></script>
+    <script defer src="/js/variables.js"></script>
+    <script defer src="/js/navbar.js"></script>
+    <script defer src="/js/modal.js"></script>
+    <script defer src="/js/lists.js"></script>
+    <script defer src="/js/search.js"></script>
 </body>
 
 </html>
