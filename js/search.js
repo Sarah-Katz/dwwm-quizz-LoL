@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   searchBar.addEventListener("keypress", handleKeyPress);
 
   // Gère la touche entrée pour la recherche
-  function handleKeyPress(event) {
-    if (event.key === "Enter") {
+  function handleKeyPress(e) {
+    if (e.key === "Enter") {
       handleSearch();
     }
   }
