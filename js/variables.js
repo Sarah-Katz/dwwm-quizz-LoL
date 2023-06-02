@@ -25,3 +25,13 @@ const searchBarBtn = document.getElementById("searchBarBtn");
 
 // Indicateur de catégorie
 let currentCategory = "champ";
+
+// Variables du quizz
+const quizzStartBtn = document.getElementById("quizzStartBtn");
+const quizz = document.getElementById("quizz");
+const quizzImg = document.getElementById("quizzImg");
+const quizzRight = document.getElementById("quizzRight");
+const quizzInput = document.getElementById("quizzInput");
+const quizzInputBtn = document.getElementById("quizzInputBtn");
+const quizzHint = document.getElementById("quizzHint");
+const quizzRules = document.getElementById("quizzRules");

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
+    <title>Quizz</title>
+</head>
+
+<body>
+    <!-- Background image -->
+    <div class="background"></div>
+    <!-- /Background image -->
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img class="image m-1" src="/img/logo.png" width="120">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <button id="linkListes" class="navbar-item button ml-6 m-2">
+                    <span class="txt-gold">Listes</span>
+                </button>
+                <button id="linkQuizz" class="navbar-item button ml-6 m-2">
+                    <span class="txt-gold">Quizz</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- /Navbar -->
+    <!-- Quizz -->
+    <div class="columns">
+        <div class="column is-3 has-text-centered">
+            <figure class="image">
+                <img class="imgQuizz" src="" id="quizzImg">
+            </figure>
+        </div>
+        <div class="column is-6 has-text-centered">
+            <p class="title is-2 m-3 p-3 txt-gold">Quizz League of Legends</p>
+            <p id="quizzRules" class="subtitle m-3 p-3 txt-blue">You'll be guessing champions names, you'll see their picture <br>
+                and have 7 guess 180 seconds to reach the best score you can</p>
+            <a id="quizzStartBtn" class="btn-cat button">
+                <span class="txt-gold">Start Quizz</span>
+            </a>
+            <div id="quizz" class="content">
+                <p id="quizzContainer" class="title txt-gold m-3"></p>
+                <p id="quizzHint" class="title is-4"></p>
+                <!-- input -->
+                <div class="column is-full is-flex is-justify-content-center">
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input id="quizzInput" style="display: none;" class="input btn-input" type="text" placeholder="Your answer">
+                        </div>
+                        <div class="control">
+                            <a id="quizzInputBtn" style="display: none;" class="btn-input button">
+                                <span class="txt-gold">Submit</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /input -->
+            </div>
+        </div>
+        <div id="quizz" class="column is-3 has-text-centered">
+            <figure class="image">
+                <img class="imgQuizz" src="" id="quizzRight">
+            </figure>
+        </div>
+    </div>
+    <!-- /Quizz -->
+
+
+    <script defer src="js/variables.js"></script>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/lists.js"></script>
+    <script defer src="js/quizz.js"></script>
+</body>
+
+</html>
