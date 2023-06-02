@@ -5,13 +5,23 @@ const championsImgSquare = "http://ddragon.leagueoflegends.com/cdn/13.10.1/img/c
 const championsImgLoading = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/";
 const spellImg = "http://ddragon.leagueoflegends.com/cdn/13.11.1/img/spell/";
 const passiveImg = "http://ddragon.leagueoflegends.com/cdn/13.11.1/img/passive/";
+const urlObjects = "http://ddragon.leagueoflegends.com/cdn/13.11.1/data/en_US/item.json";
+const objectsImg = "http://ddragon.leagueoflegends.com/cdn/13.11.1/img/item/";
+
+// Boutons de choix
+const btnChamp = document.getElementById("btnChamp");
+const btnObject = document.getElementById("btnObject");
 
 // Conteneurs des listes
 const championsList = document.getElementById("championsList");
+const objectsList = document.getElementById("objectsList");
 
 // Graphique de stat des champions
 const statChartCanvas = document.getElementById("chart");
 
-// Input de recherche des champions
-const champSearchInput = document.getElementById("champSearchInput");
-const champSearchInputBtn = document.getElementById("champSearchInputBtn");
+// Input de recherche
+const searchBar = document.getElementById("searchBar");
+const searchBarBtn = document.getElementById("searchBarBtn");
+
+// Indicateur de catégorie
+let currentCategory = "champ";
