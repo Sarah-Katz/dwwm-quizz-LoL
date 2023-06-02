@@ -1,0 +1,150 @@
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 166, 0, 0.4) var(--btnBackground);
+  --background: #262626;
+  --btnBackground: #121b1b;
+  --btnStroke: #533c16;
+  --textGold: linear-gradient(180deg, #895b2a 0%, #d49e46 52.6%, #895b2a 100%);
+  --textBlue: #11869e;
+}
+
+::placeholder {
+  color: var(--textBlue) !important;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/background1080.jpg);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  z-index: -1;
+  position: fixed;
+}
+
+.navbar {
+  background-color: var(--background) !important;
+}
+
+.navbar-item {
+  background-color: var(--btnBackground) !important;
+  border: 2px solid var(--btnStroke) !important;
+  border-radius: 10px !important;
+}
+
+.navbar-item > span {
+  background: var(--textGold) !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 20px;
+}
+
+.card {
+  background: none !important;
+}
+
+.btn-cat {
+  width: 250px;
+  background-color: var(--btnBackground) !important;
+  border: 2px solid var(--btnStroke) !important;
+  border-radius: 10px !important;
+  transition: all 0.1s;
+}
+
+.btn-cat:hover {
+  transition: all 0.1s;
+  transform: scale(1.05);
+}
+
+.btn-cat > span,
+.card-title {
+  font-size: 20px;
+}
+
+.btn-input {
+  background-color: var(--btnBackground) !important;
+  border: 2px solid var(--btnStroke) !important;
+  border-radius: 10px !important;
+}
+
+.txt-gold {
+  background: var(--textGold) !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.txt-blue {
+  color: var(--textBlue) !important;
+}
+
+#modalChampBackground,
+#modalObjectBackground {
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modalChamp,
+#modalObject {
+  background-color: var(--btnBackground);
+  border: solid 3px var(--btnStroke);
+  border-radius: 10px;
+  z-index: 2;
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+}
+
+.champImg {
+  border: solid 2px var(--btnStroke);
+  border-radius: 10px;
+  width: 80% !important;
+  position: absolute !important;
+  left: 10% !important;
+}
+
+#titleChamp {
+  font-size: 50px;
+}
+
+.objectImg,
+.objectFromImg,
+.objectIntoImg {
+  border: solid 2px var(--btnStroke);
+  border-radius: 10px;
+}
+
+.objectFromImg {
+  width: 96px !important;
+}
+
+.objectIntoImg {
+  width: 96px !important;
+}
+
+#objectTo {
+  display: flex !important;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+#modalObjectStats > li {
+  border: 2px solid var(--btnStroke);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--background);
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.imgQuizz {
+  background-color: var(--btnBackground) !important;
+  border: 2px solid var(--btnStroke) !important;
+  border-radius: 10px !important;
+}
