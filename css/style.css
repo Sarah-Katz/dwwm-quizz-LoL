@@ -77,7 +77,8 @@
   color: var(--textBlue) !important;
 }
 
-#modalBackground {
+#modalChampBackground,
+#modalObjectBackground {
   z-index: 2;
   position: fixed;
   width: 100vw;
@@ -87,7 +88,8 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#modalChamp {
+#modalChamp,
+#modalObject {
   background-color: var(--btnBackground);
   border: solid 3px var(--btnStroke);
   border-radius: 10px;
@@ -109,4 +111,34 @@
 
 #titleChamp {
   font-size: 50px;
+}
+
+.objectImg,
+.objectFromImg,
+.objectIntoImg {
+  border: solid 2px var(--btnStroke);
+  border-radius: 10px;
+}
+
+.objectFromImg {
+  width: 96px !important;
+}
+
+.objectIntoImg {
+  width: 96px !important;
+}
+
+#objectTo {
+  display: flex !important;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+#modalObjectStats > li {
+  border: 2px solid var(--btnStroke);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--background);
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.4);
 }
